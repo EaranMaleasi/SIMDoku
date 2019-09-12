@@ -10,7 +10,7 @@ If you like this project so much, that you even use it productively and you're m
 
 ## Current Project
 ### Initial Implementation & Features
-- [x]Simple data management system
+- [x] Simple data management system
   - [x] JSON based
   - [ ] Simple Database object based on `List<T>` or `Dicitonary<T,T>`
   - [x] Encrypt files so that I can back them up and sync them with the cloud easyily
