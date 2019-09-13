@@ -10,16 +10,17 @@ If you like this project so much, that you even use it productively and you're m
 
 ## Current Project
 ### Initial Implementation & Features
-- [x] Simple data management system
-  - [x] JSON based
+- [ ] Simple data management system
+  - [ ] JSON based
   - [ ] Simple Database object based on `List<T>` or `Dicitonary<T,T>`
-  - [x] Encrypt files so that I can back them up and sync them with the cloud easyily
+  - [ ] Encrypt files so that I can back them up and sync them with the cloud easyily
 - [ ] Simple GUI with WinForms that does it's job.
   - [ ] Create a TagTextBox Control
   - [ ] Either use `TreeView` or create custom `AccordeonControl` as Group and/or folder menu
-  - [ ] Big table that filters based on search (either Tags or full-text)
+  - [ ] Big table that filters based on search (either Tags or full-text) and/or menu selection
 - [ ] Keep data access, business logic and GUI as far apart as possible with service locator or IoC-Container
-- [ ] Implement as much as possible with .NET Standard 2.0
+  - [ ] Implement Autofac in all projects
+  - [ ] Create a usable data access abstraction
 - [ ] Implement all the Features
   - [ ] Track physical folders and their documents
   - [ ] Save digital copies of documents (mostly Pictures at this point)
@@ -29,6 +30,12 @@ If you like this project so much, that you even use it productively and you're m
   - [ ] Tagging of groups, folders and documents 
   - [ ] Dynamic expansion of tags
   - [ ] Easy to use GUI
+- [ ] Implement as much as possible with .NET Standard 2.0
+  - [ ] File access
+  - [ ] data handling
+  - [ ] maybe some of the logic?
+- [ ] Be as async as possible
+  - [ ] Async loading of data from files
 
 
 ## Future Projects
@@ -39,6 +46,7 @@ These are the features that I want to explore/implement in the future. These are
   - SQLite and Access Implementations
   - MySQL, SQL Server and Oracle Implementations (Nope, I will not go into StoredProcedure territory)
   - Implementation for NoSQL Databases (Feel free to give me suggestions)
+  - Use of a simple Object-Relational-Mapper (ORM)
 - Using Entity Framework Core for advanced data handling
 - Xamarin.Forms Implementations
   - Android, iOS and UWP. 
