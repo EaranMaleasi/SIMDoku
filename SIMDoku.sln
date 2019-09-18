@@ -11,13 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIMDoku.DataAccess", "SIMDoku.DataAccess\SIMDoku.DataAccess.csproj", "{EBC38310-19DB-49CF-90CD-758581B18979}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIMDoku.DataManagement", "SIMDoku.DataAccess\SIMDoku.DataManagement.csproj", "{EBC38310-19DB-49CF-90CD-758581B18979}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIMDoku.DataObjects", "SIMDoku.DataObjects\SIMDoku.DataObjects.csproj", "{C1E57AF6-9502-48FF-A8D1-974A16D25109}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIMDoku.Models", "SIMDoku.DataObjects\SIMDoku.Models.csproj", "{C1E57AF6-9502-48FF-A8D1-974A16D25109}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIMDoku.FileHandling", "SIMDoku.FileHandling\SIMDoku.FileHandling.csproj", "{2B559A48-A5A4-4C8E-B876-6B8108DFF5AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIMDoku.Core", "SIMDoku.Core\SIMDoku.Core.csproj", "{0BC7BA4A-BBEA-4976-BBB5-A5B0F59D3B0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIMDoku.Core", "SIMDoku.Core\SIMDoku.Core.csproj", "{0BC7BA4A-BBEA-4976-BBB5-A5B0F59D3B0D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIMDoku.FileManagement", "SIMDoku.FileManagement\SIMDoku.FileManagement.csproj", "{15495E3F-75CD-4FE6-B8FF-2021AA3CA76C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,14 +37,14 @@ Global
 		{C1E57AF6-9502-48FF-A8D1-974A16D25109}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1E57AF6-9502-48FF-A8D1-974A16D25109}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1E57AF6-9502-48FF-A8D1-974A16D25109}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2B559A48-A5A4-4C8E-B876-6B8108DFF5AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2B559A48-A5A4-4C8E-B876-6B8108DFF5AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2B559A48-A5A4-4C8E-B876-6B8108DFF5AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2B559A48-A5A4-4C8E-B876-6B8108DFF5AF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0BC7BA4A-BBEA-4976-BBB5-A5B0F59D3B0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0BC7BA4A-BBEA-4976-BBB5-A5B0F59D3B0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BC7BA4A-BBEA-4976-BBB5-A5B0F59D3B0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BC7BA4A-BBEA-4976-BBB5-A5B0F59D3B0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15495E3F-75CD-4FE6-B8FF-2021AA3CA76C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15495E3F-75CD-4FE6-B8FF-2021AA3CA76C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15495E3F-75CD-4FE6-B8FF-2021AA3CA76C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15495E3F-75CD-4FE6-B8FF-2021AA3CA76C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

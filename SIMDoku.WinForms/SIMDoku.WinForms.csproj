@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bootstrap\WinFormsBootstrapper.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,17 +82,23 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SIMDoku.DataAccess\SIMDoku.DataAccess.csproj">
+    <ProjectReference Include="..\SIMDoku.Core\SIMDoku.Core.csproj">
+      <Project>{0bc7ba4a-bbea-4976-bbb5-a5b0f59d3b0d}</Project>
+      <Name>SIMDoku.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIMDoku.DataAccess\SIMDoku.DataManagement.csproj">
       <Project>{ebc38310-19db-49cf-90cd-758581b18979}</Project>
-      <Name>SIMDoku.DataAccess</Name>
+      <Name>SIMDoku.DataManagement</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SIMDoku.DataObjects\SIMDoku.DataObjects.csproj">
+    <ProjectReference Include="..\SIMDoku.DataObjects\SIMDoku.Models.csproj">
       <Project>{c1e57af6-9502-48ff-a8d1-974a16d25109}</Project>
-      <Name>SIMDoku.DataObjects</Name>
+      <Name>SIMDoku.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIMDoku.FileManagement\SIMDoku.FileManagement.csproj">
+      <Project>{15495e3f-75cd-4fe6-b8ff-2021aa3ca76c}</Project>
+      <Name>SIMDoku.FileManagement</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Autofac\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

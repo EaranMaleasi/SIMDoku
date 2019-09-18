@@ -6,11 +6,11 @@
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.9.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\SIMDoku.Core\SIMDoku.Core.csproj" />
-    <ProjectReference Include="..\SIMDoku.DataObjects\SIMDoku.DataObjects.csproj" />
   </ItemGroup>
 
 </Project>

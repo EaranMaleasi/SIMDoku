@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SIMDoku.Core\SIMDoku.Core.csproj" />
+    <ProjectReference Include="..\SIMDoku.Models\SIMDoku.Models.csproj" />
+    <ProjectReference Include="..\SIMDoku.FileManagement\SIMDoku.FileManagement.csproj" />
+  </ItemGroup>
+
+</Project>

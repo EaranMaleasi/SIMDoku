@@ -4,16 +4,19 @@ namespace SIMDoku.Core
 {
 	public abstract class AutofacBootstrapper
 	{
-		protected ContainerBuilder Container { get; private set; }
-		protected AutofacConfiguration Configuration { get; private set; }
+		protected ContainerBuilder Container { get; }
 
 
-		public AutofacBootstrapper(ContainerBuilder container, AutofacConfiguration configuration)
+		public AutofacBootstrapper()
 		{
-			Container = container;
-			Configuration = configuration;
+			Container = new ContainerBuilder();
 		}
 
 		public abstract void RegisterServices();
+
+		public IContainer BuildContainer()
+		{
+			return Container.Build();
+		}
 	}
 }

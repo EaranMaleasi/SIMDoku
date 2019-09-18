@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Autofac;
+
+using SIMDoku.WinForms.Bootstrap;
+
+using System;
 using System.Windows.Forms;
 
 namespace SIMDoku.WinForms
@@ -11,6 +15,10 @@ namespace SIMDoku.WinForms
 		[STAThread]
 		static void Main()
 		{
+			WinFormsBootstrapper wfb = new WinFormsBootstrapper();
+			wfb.RegisterServices();
+			IContainer container = wfb.BuildContainer();
+
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
 			Application.Run(new Form1());

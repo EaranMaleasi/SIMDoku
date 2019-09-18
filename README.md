@@ -10,9 +10,10 @@ If you like this project so much, that you even use it productively and you're m
 
 ## Current Project
 ### Initial Implementation & Features
-- [ ] Simple data management system
-  - [ ] JSON based
-  - [ ] Simple Database object based on `List<T>` or `Dicitonary<T,T>`
+- [x] Simple data management system
+  - [x] JSON based
+  - [x] Simple Database object based on `List<T>` or `Dicitonary<T,T>`
+  - [ ] Zip the files together to save space with backups.
   - [ ] Encrypt files so that I can back them up and sync them with the cloud easyily
 - [ ] Simple GUI with WinForms that does it's job.
   - [ ] Create a TagTextBox Control
@@ -34,6 +35,7 @@ If you like this project so much, that you even use it productively and you're m
   - [ ] File access
   - [ ] data handling
   - [ ] maybe some of the logic?
+    - [ ] Try something with a messaging.
 - [ ] Be as async as possible
   - [ ] Async loading of data from files
 
@@ -43,10 +45,9 @@ These are the features that I want to explore/implement in the future. These are
 - WPF Implementation with strict MVVM and nicer GUI (Animations! Modern look!)
    - Maybe even with some UWP adventures for that shiny acrylic feature of Fluent Design (XAML Islands)
 - Abstracted DataAccess Layer for all the data storages
-  - SQLite and Access Implementations
+  - SQLite and Implementations
   - MySQL, SQL Server and Oracle Implementations (Nope, I will not go into StoredProcedure territory)
   - Implementation for NoSQL Databases (Feel free to give me suggestions)
-  - Use of a simple Object-Relational-Mapper (ORM)
 - Using Entity Framework Core for advanced data handling
 - Xamarin.Forms Implementations
   - Android, iOS and UWP. 
