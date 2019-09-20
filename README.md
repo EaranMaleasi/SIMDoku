@@ -39,6 +39,9 @@ If you like this project so much, that you even use it productively and you're m
 - [ ] Be as async as possible
   - [ ] Async loading of data from files
 
+## Projects being planned
+- WPF Implementation with strict MVVM and nicer GUI (Animations! Modern look!)
+   - Maybe even with some UWP adventures for that shiny acrylic feature of Fluent Design (XAML Islands)
 
 ## Future Projects
 These are the features that I want to explore/implement in the future. These are in no particular order
@@ -62,6 +65,7 @@ These are the features that I want to explore/implement in the future. These are
 - Make everything easy to intall & use
   - Upload Apps to stores, create Installers, build packages
 - Unit-Testing and Test Driven Design
+
 
 
 ## Finished Projects

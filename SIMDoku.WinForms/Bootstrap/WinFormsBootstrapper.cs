@@ -1,18 +1,33 @@
-﻿using SIMDoku.DataManagement.Bootstrap;
+﻿using Autofac;
+
+using SIMDoku.DataManagement.Bootstrap;
 using SIMDoku.FileManagement.Bootstrap;
+using SIMDoku.Messaging.Bootstrap;
 
 namespace SIMDoku.WinForms.Bootstrap
 {
-	public class WinFormsBootstrapper : DataManagementFileBootstrapper
+	public class WinFormsBootstrapper
 	{
-		public WinFormsBootstrapper() : base(FileType.JSON)
-		{
+		private DataManagementFileBootstrapper _DataManagement;
+		private FileHandlerBootstrapper _FileHandler;
+		private MessagingBootstrapper _Messaging;
+		private ContainerBuilder _Container;
 
+		public WinFormsBootstrapper()
+		{
+			_Container = new ContainerBuilder();
+			_FileHandler = new FileHandlerBootstrapper(_Container, FileType.JSON);
+			_DataManagement = new DataManagementFileBootstrapper(_Container);
+			_Messaging = new MessagingBootstrapper(_Container);
 		}
 
-		public override void RegisterServices()
+		public IContainer RegisterComponents()
 		{
-			base.RegisterServices();
+			_FileHandler.RegisterComponents();
+			_DataManagement.RegisterComponents();
+			_Messaging.RegisterComponents();
+
+			return _Container.Build();
 		}
 	}
 }

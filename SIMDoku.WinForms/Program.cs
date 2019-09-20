@@ -16,12 +16,14 @@ namespace SIMDoku.WinForms
 		static void Main()
 		{
 			WinFormsBootstrapper wfb = new WinFormsBootstrapper();
-			wfb.RegisterServices();
-			IContainer container = wfb.BuildContainer();
+			IContainer container = wfb.RegisterComponents();
 
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
 			Application.Run(new Form1());
+
+
+
 		}
 	}
 }

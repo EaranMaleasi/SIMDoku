@@ -6,22 +6,23 @@ namespace SIMDoku.FileManagement.Bootstrap
 {
 	public class FileHandlerBootstrapper : AutofacBootstrapper
 	{
-		private readonly FileType fileType;
+		private readonly FileType _FileType;
 
-		public FileHandlerBootstrapper(FileType type) : base()
+		public FileHandlerBootstrapper(ContainerBuilder container, FileType type) : base(container)
 		{
-			fileType = type;
+			_Container = container;
+			_FileType = type;
 		}
 
-		public override void RegisterServices()
+		public override void RegisterComponents()
 		{
-			switch (fileType)
+			switch (_FileType)
 			{
 				case FileType.JSON:
-					Container.RegisterType<JsonHandler>().As<IFileHandler>();
+					_Container.RegisterType<JsonHandler>().As<IFileHandler>();
 					break;
 				case FileType.XML:
-					Container.RegisterType<XmlHandler>().As<IFileHandler>();
+					_Container.RegisterType<XmlHandler>().As<IFileHandler>();
 					break;
 				default:
 					break;

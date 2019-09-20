@@ -50,6 +50,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrap\WinFormsBootstrapper.cs" />
+    <Compile Include="Controls\Tag.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Tag.Designer.cs">
+      <DependentUpon>Tag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TagControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TagControl.Designer.cs">
+      <DependentUpon>TagControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DialogManager.cs" />
+    <Compile Include="Dialogs\DocumentsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DocumentsDialog.Designer.cs">
+      <DependentUpon>DocumentsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\IDialog.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +78,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\Tag.resx">
+      <DependentUpon>Tag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TagControl.resx">
+      <DependentUpon>TagControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DocumentsDialog.resx">
+      <DependentUpon>DocumentsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -83,22 +115,28 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SIMDoku.Core\SIMDoku.Core.csproj">
-      <Project>{0bc7ba4a-bbea-4976-bbb5-a5b0f59d3b0d}</Project>
+      <Project>{4EF741CC-C558-4613-8561-DEFDB20D7BBD}</Project>
       <Name>SIMDoku.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SIMDoku.DataAccess\SIMDoku.DataManagement.csproj">
-      <Project>{ebc38310-19db-49cf-90cd-758581b18979}</Project>
+    <ProjectReference Include="..\SIMDoku.DataManagement\SIMDoku.DataManagement.csproj">
+      <Project>{fffa43ec-0983-49c4-94bf-5a49a3da9127}</Project>
       <Name>SIMDoku.DataManagement</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SIMDoku.DataObjects\SIMDoku.Models.csproj">
-      <Project>{c1e57af6-9502-48ff-a8d1-974a16d25109}</Project>
-      <Name>SIMDoku.Models</Name>
     </ProjectReference>
     <ProjectReference Include="..\SIMDoku.FileManagement\SIMDoku.FileManagement.csproj">
       <Project>{15495e3f-75cd-4fe6-b8ff-2021aa3ca76c}</Project>
       <Name>SIMDoku.FileManagement</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SIMDoku.Messaging\SIMDoku.Messaging.csproj">
+      <Project>{652CB9D0-CC89-4C8B-8CAC-3000496F299E}</Project>
+      <Name>SIMDoku.Messaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIMDoku.Models\SIMDoku.Models.csproj">
+      <Project>{5e8f6265-0451-406e-9fde-e554f810fe63}</Project>
+      <Name>SIMDoku.Models</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Forms\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
