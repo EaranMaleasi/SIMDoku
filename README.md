@@ -1,4 +1,6 @@
 # SIMDoku
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FEaranMaleasi%2FSIMDoku.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FEaranMaleasi%2FSIMDoku?ref=badge_shield)
+
 SIMDoku is my personal training project where I explore different patterns, frameworks, databases and other things.
 Functionality wise it is a simple document management system that tracks the location of physical documents within physical folders (somewhat) and saves digitalized copies of them in some kind of storage. 
 
@@ -78,3 +80,7 @@ Someday you'll be able to see all the people that helped me with this project be
 ## Used Libraries & Packages
 Here you'll see all the libraries and NuGet Packages that I've used below.
  - Newtonsoft.JSON
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FEaranMaleasi%2FSIMDoku.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FEaranMaleasi%2FSIMDoku?ref=badge_large)
